@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#menu-desplegable {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute;
+    background-color: darkgrey;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#boton-menu {
+    display: block;
+    margin: 0 auto; /* Establece los márgenes laterales automáticos para centrar horizontalmente */
+}
+
+
+#menu-desplegable ul {
+    list-style-type: none; /* Elimina los puntos */
+    padding: 0; /* Elimina el espacio interior */
+    text-align: center;
+    border: none;
+}
+
+#menu-desplegable ul li {
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 10px; /* Espacio entre los elementos de la lista */
+    border: 1px solid black; /* Agrega un borde sólido de color gris */
+    padding: 5px 10px; /* Agrega un espacio de relleno dentro del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    background-color: darkgrey;
+    color: black;
+}
+
+#menu-desplegable ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#menu-desplegable.mostrar {
+    display: block;
+}
+
+article {
+    border: 5px solid black; /* Define el estilo del borde */
+    padding: 10px; /* Agrega espacio interno para separar el contenido del borde */
+    margin-bottom: 20px; /* Agrega espacio inferior para separar los elementos */
+}
+
+h1 {
+    display: inline-block; /* Hace que el título sea un bloque en línea */
+    border-bottom: 2px solid #000; /* Define un borde inferior de 2 píxeles sólido de color negro */
+    padding-bottom: 5px; /* Agrega espacio debajo del título para separar el subrayado */
+}
+
+a.button {
+    border: 2px solid black;
+    display: inline-block; /* Para que el elemento se comporte como un bloque pero aún respete el flujo del texto */
+    padding: 10px 20px; /* Ajusta según sea necesario */
+    text-decoration: none; /* Para eliminar el subrayado predeterminado */
+}
+
+a.button article {
+    text-decoration: none;
+    font-family: "Lobster", sans-serif; /* Reemplaza "nombre de la fuente" con el nombre de la fuente que desees usar */
+    /* Si quieres que la fuente sea similar a la del resto de la página, puedes usar "inherit" */
+    /* font-family: inherit; */
+}
+
+a:visited {
+    color: black; /* Color de texto blanco para enlaces visitados */
+}
+
+/* Estilos adicionales según tus preferencias */

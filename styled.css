@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: "Lobster", sans-serif;
+    background-color: darkgray;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura del viewport */
+    margin: 0; /* Asegura que no haya margen alrededor del cuerpo */
+    padding: 0; /* Asegura que no haya relleno alrededor del cuerpo */
+}
+
+header img:first-child {
+    width: 100px; /* ajusta el ancho según tu preferencia */
+    height: auto; /* para mantener la proporción original */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos */
+    padding: 0; /* Elimina el espacio interior */
+    text-align: center;
+    border: 5px double whitesmoke;
+}
+
+nav ul li {
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 10px; /* Espacio entre los elementos de la lista */
+    border: 1px solid #ccc; /* Agrega un borde sólido de color gris */
+    padding: 5px 10px; /* Agrega un espacio de relleno dentro del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    background-color: black;
+    color: aliceblue;
+}
+
+nav ul li:last-child {
+    background-color: green;
+    border: 1px solid yellow; /* Agrega un borde sólido de color gris */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita la subrayado predeterminado */
+}
+
+nav ul li a:hover {
+    background-color: gray; /* Cambia el color de fondo al pasar el cursor */
+    color: black; /* Cambia el color del texto al pasar el cursor */
+}
+
+nav ul li a:visited {
+    color: aliceblue; /* Color de texto blanco para enlaces visitados */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+}
