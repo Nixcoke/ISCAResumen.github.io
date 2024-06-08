@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISCA 4014 - Análisis de Sistemas Organizacionales</title>
     <link rel="stylesheet" href="styled.css">
+    <style>
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #fcfcfc;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .chat-button svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +48,7 @@
             <li><a href="./analisis.html">Análisis de Sistemas Organizacionales</a></li>
             <li><a href="./comunicacion.html">Comunicación - UDI</a></li>
             <li><a href="./gestion.html">Gestión de Software I</a></li>
-            <li><a href="https://classroom.google.com/a/not-turned-in/all">Tareas de Classroom</a></li>
+            <li><a href="https://classroom.google.com/a/not-turned-in/all" target="_blank">Tareas de Classroom</a></li>
         </ul>
     </nav>
 
@@ -48,5 +70,16 @@
               <h3>Caracteristicas De Un Lider Definidas Por El Grupo Escolar</h3>
           </article> </a>
 
+          <button class="chat-button" onclick="openChat()">
+            <!-- SVG del icono de chat -->
+            <img src="./logos/jack.svg" alt="Chat Icon">
+        </button>
+    
+        <script>
+            function openChat() {
+                window.open('./Asistente/Jack.html', '_blank', 'width=600,height=600');
+            }
+        </script>
+        
 </body>
 </html>
